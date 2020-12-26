@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.card-container{
+    height:200px;
+    width:200px;
+    background:transparent;
+    border-radius: 13px;
+    margin:20px;
+}
+
+.card{
+    height:100%;
+    width:100%;
+    border-radius: inherit;
+    padding:auto;
+    float: left;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s ease-in-out;
+    transform-style: preserve-3d;
+}
+
+.nav{
+    display:flex;
+    margin:20px;
+    align-items: baseline;
+    font-family: 'Mystery Quest';
+    align-items: center;
+    justify-content: center;
+}
+
+#random{
+    height:30px;
+    width:30px;
+    margin:10px;
+    filter:invert(1);
+}
+
+.card img{
+    width:100%;
+    height:100%;
+    position: absolute;
+    max-width: 200px;
+    border-radius: inherit;
+}
+
+.card-container:hover .card{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.5);
+    transform: rotateY(180deg);
+}
+
+.card .back{
+    transform: rotateY(180deg);
+}
+
